@@ -1,6 +1,8 @@
 ﻿using Data_Access_Layer.Repository;
 using Data_Access_Layer.Repository.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Data_Access_Layer
 {
@@ -13,7 +15,7 @@ namespace Data_Access_Layer
         }
         public List<User> GetUsers()
         {
-           return _userDbContext.users.ToList();
+             return _userDbContext.users.ToList(); 
         }
 
         public User GetUserbyId(int id) 

@@ -3,7 +3,7 @@ using Data_Access_Layer.Repository.Models;
 
 namespace Business_Logic_Layer
 {
-    public class UserBLL
+    public class UserBLL : IUserBLL
     {
         private UserDAL _userDAL;
       
